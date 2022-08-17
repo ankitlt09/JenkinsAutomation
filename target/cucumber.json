@@ -1,0 +1,186 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-21T12:28:00.293Z",
+        "line": 14,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4663000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user opens the browser",
+            "match": {
+              "location": "stepDefinitions.LoginDemoSteps.user_opens_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1297000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to the login page of the site",
+            "match": {
+              "location": "stepDefinitions.LoginDemoSteps.user_navigates_to_the_login_page_of_the_site()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2363000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enters \"John Doe\" and \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Doe",
+                  "offset": 8
+                },
+                {
+                  "val": "12345",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinitions.LoginDemoSteps.enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on login",
+            "match": {
+              "location": "stepDefinitions.LoginDemoSteps.user_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8883000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user navigates to the home page",
+            "match": {
+              "location": "stepDefinitions.LoginDemoSteps.user_navigates_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-21T12:28:17.642Z",
+        "line": 15,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1582000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user opens the browser",
+            "match": {
+              "location": "stepDefinitions.LoginDemoSteps.user_opens_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1375000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to the login page of the site",
+            "match": {
+              "location": "stepDefinitions.LoginDemoSteps.user_navigates_to_the_login_page_of_the_site()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2178000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enters \"Jack\" and \"password@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jack",
+                  "offset": 8
+                },
+                {
+                  "val": "password@123",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinitions.LoginDemoSteps.enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on login",
+            "match": {
+              "location": "stepDefinitions.LoginDemoSteps.user_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepDefinitions.LoginDemoSteps.user_navigates_to_the_home_page(LoginDemoSteps.java:52)\r\n\tat ✽.user navigates to the home page(file:///D:/Cucumber-Project/src/test/Feature/LoginDemo.feature:10)\r\n",
+              "duration": 80000000,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "user navigates to the home page",
+            "match": {
+              "location": "stepDefinitions.LoginDemoSteps.user_navigates_to_the_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginTest"
+          }
+        ]
+      }
+    ],
+    "name": "Test Login functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/Feature/LoginDemo.feature",
+    "tags": []
+  }
+]
