@@ -7,5 +7,5 @@ report/
 .project
  .metadata/
 application.log
-src/test/resources/config_properties/config.properties
+src/main/resources/config_properties/config.properties
 pom.xml
